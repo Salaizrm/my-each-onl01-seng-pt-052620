@@ -1,11 +1,8 @@
 def my_each(x)
-
-  while x < 0
-    yield
+i = 0
+  while i < x.length
+    yield(x[i])
+    i = i + 1
   end
-end
-
-num = [1,2,3,4]
-my_each(num) do |i|
-  puts i
+  x
 end
